@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import {Text, View, TextInput} from 'react-native'
+import {Text, View, TextInput, Alert} from 'react-native'
 
 import Icon from 'react-native-vector-icons/FontAwesome5'
 
@@ -15,10 +15,15 @@ export default props => {
         setResultado(Number(a) - Number(b))
     }
     function divisao() {
-        setResultado(Number(a) * Number(b))
+        if(!Number(a) == 0 || Number(b)){
+            setResultado(Number(a) / Number(b))
+        }else{
+            Alert.alert("Não pode divisão por 0 em")
+        }
+        
     }
     function mult() {
-        setResultado(Number(a) / Number(b))
+        setResultado(Number(a) * Number(b))
     }
 
     return(
