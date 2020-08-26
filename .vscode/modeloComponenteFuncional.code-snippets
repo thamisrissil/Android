@@ -1,0 +1,18 @@
+{
+	 "Print to console": {
+	 	"scope": "javascript,typescript",
+	 	"prefix": "modelo",
+	 	"body": [
+			 "import React from 'react'",
+			 "import {Text, View} from 'react-native'",
+			 "export default props => {",
+			 "return (",
+			 "<View>",
+			 "<Text>$1</Text>",
+			 "</View>",
+			 ");"
+			 "}"
+	 	],
+	 	"description": "Log output to console"
+	 }
+}
