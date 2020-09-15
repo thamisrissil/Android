@@ -1,7 +1,7 @@
 import React from 'react'
 import Filho from './Filho'
 
-export default () => {
+export default props => {
     let x = 13
     let y = 100
     return (
